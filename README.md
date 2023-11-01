@@ -60,6 +60,7 @@ CloudFront : Amazon CloudFront is a fast content delivery network (CDN) service 
  ![image](https://github.com/virajmate7776/Static-Website-AWS-S3/assets/117629972/a921b4a2-573b-4bc9-aff2-06e508dcdbc7)
 
 <br>
+
    3. Set permission section to uncheck **Block all public access**.
 
 <br>
@@ -103,7 +104,8 @@ CloudFront : Amazon CloudFront is a fast content delivery network (CDN) service 
  4.	To grant public read access for your website, copy the following bucket  
                   policy, and paste it in the **Bucket policy editor**.
 
-   	<br>
+
+   		<br>
 
 
   	     {
@@ -122,6 +124,7 @@ CloudFront : Amazon CloudFront is a fast content delivery network (CDN) service 
           }
          ]
         }
+
 <br>
 
 ![image](https://github.com/virajmate7776/Static-Website-AWS-S3/assets/117629972/144487e1-1a23-4017-9d20-6ccab45ac810)
@@ -133,6 +136,7 @@ CloudFront : Amazon CloudFront is a fast content delivery network (CDN) service 
 <br>
 
 ### 4.	Enable Static Web Hosting in s3 bucket for “**cloudontop.live**”
+
 <br>
 
   1.	Select the Bucket that we have created. 
@@ -151,6 +155,7 @@ CloudFront : Amazon CloudFront is a fast content delivery network (CDN) service 
 <br>
   
   7.	Copy the “**Endpoint**” URL of the s3 bucket and paste it on the Browser.
+
 <br>
 
 ![image](https://github.com/virajmate7776/Static-Website-AWS-S3/assets/117629972/5b249e55-316c-4479-ba90-2a8dc97abef1)
@@ -165,7 +170,9 @@ CloudFront : Amazon CloudFront is a fast content delivery network (CDN) service 
    2. In the left side panel click on “**Hosted zones**".
    3. Write the name same as your domain name and in the type option, click on the radio button of “**Public hosted zone**”.
    4. Click on “**Create hosted zone**”.
+
 <br>
+ 
  ![image](https://github.com/virajmate7776/Static-Website-AWS-S3/assets/117629972/863ee8bd-311b-44bb-bad7-05de4a9ab63d)
 
 <br>
@@ -173,8 +180,10 @@ CloudFront : Amazon CloudFront is a fast content delivery network (CDN) service 
 ![image](https://github.com/virajmate7776/Static-Website-AWS-S3/assets/117629972/03d5a8f3-8227-47c3-afd5-6aaf6d3d8699)
 
  <br>
+ 
    5. Login to GoDaddy.com and update the Name Servers.
    6. Go to **DNS Management** and Change the **Name Servers**.
+
 <br>
 
  ![image](https://github.com/virajmate7776/Static-Website-AWS-S3/assets/117629972/2e80ffeb-5304-4e64-ba0f-36e3231a724b)
@@ -187,11 +196,13 @@ CloudFront : Amazon CloudFront is a fast content delivery network (CDN) service 
              
   ###  3) Generate a SSL/TLS Certificate Using AWS Certificate Manager
   <br>
+  
   1. Click on the Service option at the top of the bar and search service "**Certificate Manager**" in the search box and click on it
   2.  In the certificate manager console screen click on “Request certificate”.
   3. Choose the radio button named "**Request a public certificate**" and click on button name “**Request certificate**” below of the screen.
   4. Add domain name “**cloudontop.live**” and click next.
   5. Select the DNS Validation method & click on next.
+
 <br>
 
 ![image](https://github.com/virajmate7776/Static-Website-AWS-S3/assets/117629972/28c25c0c-3d28-47d1-8ed8-eabb56cc5578)
@@ -202,7 +213,9 @@ CloudFront : Amazon CloudFront is a fast content delivery network (CDN) service 
 
 
  ### 4) Create a Record Set in Route53
+  
   <br>
+  
   1. Go to Route53 service and select the **hosted zone** we have created.
   2. Click on **Create record** .
   3. Click on the DNS name on the screen and you will get the name and value. Create a CNAME record in the DNS configuration for the domain.
@@ -224,7 +237,9 @@ CloudFront : Amazon CloudFront is a fast content delivery network (CDN) service 
 <br>
 
 ### 5)	Create CloudFront Distribution for “cloudontop.live”
+
 <br>
+
  1.	 Make sure use www.cloudontop.live certificate and s3 bucket endpoint
 
  2.	Click on the Service option at the top of the bar and search service CloudFront in the search box and click on it.
@@ -282,7 +297,9 @@ CloudFront : Amazon CloudFront is a fast content delivery network (CDN) service 
 
 
 ### 6)	Create A record in Route53
+
 <br>
+
   1. Go to Route53  and select  “**Hosted zones**”.
 
   2. Click on Create record and Update the “**A**” record of “**cloudontop.live**” with the value as CloudFront distribution domain name of the “**cloudontop.live**”.
