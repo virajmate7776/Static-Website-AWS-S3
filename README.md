@@ -20,7 +20,11 @@
 
 •	Running Static Website.
 
+<br>
+
 ### Basic Introduction About AWS Services
+
+<br>
 
 **S3-Bucket** : Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance. This means customers of all sizes and industries can use it to store and protect any amount of data for a range of use cases, such as websites, mobile applications, backup and restore, archive, enterprise applications, IoT devices, and big data analytics. Amazon S3 provides easy-to-use management features so you can organize your data and configure finely-tuned access controls to meet your specific business, organizational, and compliance requirements.
 
@@ -38,6 +42,7 @@ CloudFront : Amazon CloudFront is a fast content delivery network (CDN) service 
 ### 1)	Create S3 Bucket for our domain name
 
 <br>
+
  1. Login to AWS console using https://console.aws.amazon.com/
  
  2. Click on the Service option at the top of the bar and search service s3 bucket in the search box and click on it.
@@ -49,11 +54,14 @@ CloudFront : Amazon CloudFront is a fast content delivery network (CDN) service 
    1. Create a Bucket with same name as your domain name.
    
    2. Choose a region of your choice.
+
+ <br>
  
  ![image](https://github.com/virajmate7776/Static-Website-AWS-S3/assets/117629972/a921b4a2-573b-4bc9-aff2-06e508dcdbc7)
 
 <br>
    3. Set permission section to uncheck **Block all public access**.
+
 <br>
 
    ![image](https://github.com/virajmate7776/Static-Website-AWS-S3/assets/117629972/cfc5c269-b42c-4af4-8815-2c8083a5bc3c)
@@ -75,7 +83,9 @@ CloudFront : Amazon CloudFront is a fast content delivery network (CDN) service 
  2.	Using the upload & create a file button and  upload your static site content.
 
  ![image](https://github.com/virajmate7776/Static-Website-AWS-S3/assets/117629972/1ba27259-8db5-4972-a88d-cd5694b6d68b)
+ 
 <br>
+
  ![image](https://github.com/virajmate7776/Static-Website-AWS-S3/assets/117629972/0ba1ff5e-187a-4b74-87bd-facf16ad4d00)
 
 <br> 
@@ -92,6 +102,8 @@ CloudFront : Amazon CloudFront is a fast content delivery network (CDN) service 
             
  4.	To grant public read access for your website, copy the following bucket  
                   policy, and paste it in the **Bucket policy editor**.
+
+   	<br>
 
 
   	     {
@@ -118,6 +130,7 @@ CloudFront : Amazon CloudFront is a fast content delivery network (CDN) service 
 
 5.	 Choose **Save** changes.
 
+<br>
 
 ### 4.	Enable Static Web Hosting in s3 bucket for “**cloudontop.live**”
 <br>
@@ -130,12 +143,16 @@ CloudFront : Amazon CloudFront is a fast content delivery network (CDN) service 
       Error document: Enter your error page path(ex: error.html)
 
   5. Click on the **Save** button.
+
      <br>
+     
  ![image](https://github.com/virajmate7776/Static-Website-AWS-S3/assets/117629972/76421184-1249-4f42-8c77-121bc9728bb9)
+
 <br>
   
-  6.	Copy the “**Endpoint**” URL of the s3 bucket and paste it on the Browser.
+  7.	Copy the “**Endpoint**” URL of the s3 bucket and paste it on the Browser.
 <br>
+
 ![image](https://github.com/virajmate7776/Static-Website-AWS-S3/assets/117629972/5b249e55-316c-4479-ba90-2a8dc97abef1)
 
  <br>
@@ -150,7 +167,9 @@ CloudFront : Amazon CloudFront is a fast content delivery network (CDN) service 
    4. Click on “**Create hosted zone**”.
 <br>
  ![image](https://github.com/virajmate7776/Static-Website-AWS-S3/assets/117629972/863ee8bd-311b-44bb-bad7-05de4a9ab63d)
+
 <br>
+
 ![image](https://github.com/virajmate7776/Static-Website-AWS-S3/assets/117629972/03d5a8f3-8227-47c3-afd5-6aaf6d3d8699)
 
  <br>
@@ -159,6 +178,7 @@ CloudFront : Amazon CloudFront is a fast content delivery network (CDN) service 
 <br>
 
  ![image](https://github.com/virajmate7776/Static-Website-AWS-S3/assets/117629972/2e80ffeb-5304-4e64-ba0f-36e3231a724b)
+
 <br>
 
    7. Click on Save Button.
