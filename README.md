@@ -263,7 +263,6 @@ CloudFront : Amazon CloudFront is a fast content delivery network (CDN) service 
 
 ### 6)	Create A record in Route53
 <br>
-
   1. Go to Route53  and select  “**Hosted zones**”.
 
   2. Click on Create record and Update the “**A**” record of “**cloudontop.live**” with the value as CloudFront distribution domain name of the “**cloudontop.live**”.
@@ -278,21 +277,28 @@ CloudFront : Amazon CloudFront is a fast content delivery network (CDN) service 
 
 <br>
 
-WE can see the record is created.
+We can see the record is created.
 
 <br>
+
  ![image](https://github.com/virajmate7776/Static-Website-AWS-S3/assets/117629972/42fbe13d-d54d-42cc-a5f0-20a5e890bf27)
 
 
 
-  Finally try to access your site in your browser with www.cloudontop.live is converted to Https request and secure your site.
+  Finally try to access your site in your browser with **www.cloudontop.live** is converted to Https request and secure your site.
 
+<br>
 
+  ![image](https://github.com/virajmate7776/Static-Website-AWS-S3/assets/117629972/48b92079-de1c-4dad-91ea-90c7bb759517)
 
+ <br>
  
 
   We have successsfully hosted static website on custom domain and we can access it over https.
 
+<br>
+
+![image](https://github.com/virajmate7776/Static-Website-AWS-S3/assets/117629972/ba8784ec-cedf-4e6c-bfea-e64cefd1ebb2)
 
 
  
